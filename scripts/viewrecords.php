@@ -2,7 +2,7 @@
     $title = 'View Records';
 
     require_once '../includes/header.php'; 
-    require_once 'includes/auth_check.php';  // add to other pages
+    require_once '../includes/auth_check.php';  // add to other pages
     require_once '../db/conn.php';
 
     //Get all attendees

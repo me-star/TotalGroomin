@@ -21,7 +21,7 @@
 ?>
         <h1 class="text-center">Edit Record</h1>
     
-        <form method="post" action="success.php">
+        <form method="post" action="/success.php">
             <input type="hidden" name="id" value="<?php echo $client['client_id'] ?>" />
             <div class="mb-3">
                 <label for="firstname" class="form-label">First Name</label> 

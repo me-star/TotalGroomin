@@ -1,7 +1,8 @@
  
- <div id="footer">
-    <?php echo 'copyright ' . date('Y')?>
 
+ <div id="footer" class="p-3 bg-primary text-white fixed-bottom">
+   <p class="text-center">Copright &copy;- Total Groomin <?php echo date('Y');?>
+   ></p>
  </div>
 </div>
  <!-- Optional JavaScript; choose one of the two! -->

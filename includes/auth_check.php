@@ -1,5 +1,5 @@
 <?php 
-    if(!isset($_SESSION['userid'])){
-        header("Location: login.php");
+    if(!isset($_SESSION['id'])){
+        header("Location: /totalgroomin/login.php");
     }    
 ?>

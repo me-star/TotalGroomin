@@ -1,5 +1,5 @@
 <?php
-  include_once 'includes/session.php'
+  include_once 'session.php'
 
 ?>
 
@@ -22,31 +22,33 @@
     <title>Total Groomin - <?php echo $title?></title>
   </head>
   <body>
-  <div class="container">
-        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.php">Complete Grooming</a> <!-- https://attendance-re.herokuapp.com//index.php-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="nav nav-tabs" id="navbarNav">
+    <div class="nav" id="navbarNav">
         
        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/totalgroomin/index.php">Home</a>
        </li>
-      <li class="nav-item">
-          <a class="nav-link active" href="/totalgroomin/appointments.php">Appointment</a>
+       <li class="nav-item">
+          <a class="nav-link active" href="/services.php">Services</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link active" href="/totalgroomin/scripts/viewrecords.php">View Clients</a>
+          <a class="nav-link active" href="/appointments.php">Appointment</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
+          <a class="nav-link active" href="/scripts/viewrecords.php">View Clients</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link active" href="/about.php">About</a>
       </li>
       <li class="navbar-nav ml-auto">
         <?php
-            if(!isset($_SESSION['userid'])){
+            if(!isset($_SESSION['id'])){
          ?>     
           <a class="nav-link active" aria-current="page" href="login.php">Login</a>
          <?php } else{ ?>     
@@ -60,5 +62,8 @@
     </div>
   </div>
 </nav>
-<br/>
 
+
+  <div class="container">
+       
+  <br/>
