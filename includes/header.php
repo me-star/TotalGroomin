@@ -32,7 +32,7 @@
     <div class="nav" id="navbarNav">
         
        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/totalgroomin/index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="/index.php">Home</a>
        </li>
        <li class="nav-item">
           <a class="nav-link active" href="/services.php">Services</a>
