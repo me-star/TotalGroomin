@@ -4,6 +4,7 @@
     require_once 'db/conn.php'; 
 
     if(isset($_POST['submit'])){
+       $id = isset($_POST['client_id']) ? $_POST['client_id'] : null;
        $fname = $_POST['firstname'];
        $lname = $_POST['lastname'];
        $appointment = $_POST['aptmntdate'];
@@ -12,7 +13,12 @@
        $contact = $_POST['phone'];
        $servicetype = $_POST['servicetype'];
        //Call function to insert and track if success or not
-       $isSuccess = $crud->insertClient($fname,$lname,$appointment,$aptmnttime,$email,$contact,$servicetype);
+       if ($id) {
+        $isSuccess = $crud->editClient($id,$fname, $lname, $appointment, $email, $aptmnttime, $contact, $servicetype);
+       } else {
+        $isSuccess = $crud->insertClient($fname,$lname,$appointment,$aptmnttime,$email,$contact,$servicetype);
+       }
+       
        
        if($isSuccess){
           include '<includes/successmessage.php';
