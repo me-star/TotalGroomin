@@ -10,7 +10,7 @@
    $host = 'remotemysql.com';
     $db = 'zfOW71A5Tk';
     $user = 'zfOW71A5Tk';
-    $pass = 'P@$$word5';
+    $pass = 'pwKnIpz7Ai';
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
